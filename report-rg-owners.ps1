@@ -1,0 +1,1 @@
+az group list --query "[].{Name:name, Owner:tags.owner || tags.Owner || 'MISSING'}" -o table
